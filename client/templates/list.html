@@ -1,0 +1,32 @@
+<div class="panel panel-default" ng-init="getPersonals()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-list"> </span>
+			Personal registrado
+		</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Nombre</th>
+			  <th>DNI</th>
+			  <th>Fecha de Nacimiento</th>
+			  <th>Acciones</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="personal in personals">
+			  <td>{{ personal.nombre }}</td>
+			  <td>{{ personal.dni }}</td>
+			  <td>{{ personal.f_nac }}</td>
+			  <td>
+			    <a href="#/personals/{{personal._id}}/show" class="btn btn-info"> Detalles </a>
+			    <a href="#/personals/{{personal._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Modificar  </a>
+			  	<a ng-click="deletePersonal(personal._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Eliminar </a>
+					<a href="#/personals/{{personal._id}}/entry" class="btn btn-primary"><span class="glyphicon glyphicon-transfer"> </span> Marcar entrada/salida </a>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+    <div>
+<div>

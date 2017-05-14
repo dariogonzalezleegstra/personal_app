@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="header clearfix">
+			<nav>
+			  <ul class="nav nav-pills pull-right">
+			    <li role="presentation" class="active"><a href="#/personals">
+						<span class="glyphicon glyphicon-th-list"> </span> Personal Lista </a>
+					</li>
+			    <li role="presentation"><a href="#/personals/create">
+			    	<span class="glyphicon glyphicon-plus"> </span>	Agregar nuevo personal</a>
+					</li>
+					<li role="presentation" class="active"><a href="#/report">
+						<span class="glyphicon glyphicon-plus"> </span>	Ver reporte </a>
+					</li>
+			  </ul>
+			</nav>
+			<h3 class="text-muted">App Personal</h3>
+		</div>
+		<div ng-view></div>
+
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="app.js"></script>
+<script src="controllers/controllers.js"></script>
+
+</body>
+</html>

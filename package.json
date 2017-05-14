@@ -1,0 +1,22 @@
+{
+  "name": "empappv2",
+  "version": "1.0.0",
+  "description": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+  "main": "readme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "sikandar rakib",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.9.8",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "express": "^4.15.2",
+    "moment": "^2.18.1"
+  }
+}

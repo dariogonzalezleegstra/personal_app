@@ -1,0 +1,24 @@
+<div class="panel panel-default" ng-init="showPersonal()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-edit"> </span> Modificar informacion del Personal</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updatePersonal()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" ng-model="personal.nombre" value="personal.nombre">
+    </div>
+    <div class="form-group">
+      <label for="dni">DNI:</label>
+      <input type="text" class="form-control" id="dni" ng-model="personal.dni" value="personal.dni">
+    </div>
+    <div class="form-group">
+      <label for="f_nac">Fecha de Nacimiento:</label>
+      <input type="text" class="form-control" id="f_nac" ng-model="personal.f_nac" value="personal.f_nac">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Modificar</button>
+    <a href="#/personals" class="btn btn-default"> Cancelar </a>
+</form>
+    <div>
+<div>
